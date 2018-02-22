@@ -10,7 +10,7 @@ $(document).ready(function() {
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
   
-ga('create', 'UA-{ID redacted}', 'auto');
+ga('create', 'UA-114587779-1', 'auto');
 ga('send', 'pageview');
 /*
  * Function that is called when the document is ready.
@@ -18,12 +18,10 @@ ga('send', 'pageview');
 function initializePage() {
 	// your code here
 	$(".likeBtn").click(recordClick);
-	console.log('anybody home???')
 }
 
 function recordClick(e) {
 	// Prevent following the link
 	e.preventDefault();
 	ga("send", "event", "like", "click");
-	console.log("HELLOOOOOOOOOOOO")
 }
