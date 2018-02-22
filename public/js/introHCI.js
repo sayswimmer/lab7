@@ -10,4 +10,11 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+	$(".likeBtn").click(recordClick);
+}
+
+function recordClick(e) {
+	// Prevent following the link
+	e.preventDefault();
+	ga("send", "event", 'like', 'click')
 }
